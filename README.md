@@ -8,7 +8,9 @@ Mais est-ce "humainement" possible ?
 Atteindre le niveau 20 afin de pouvoir débloquer un succès : ce succès nous donnera le flag dont nous avons besoin pour réussir ce CTF. Cependant, il est impossible pour un humain de jouer assez rapidement pour atteindre le niveau 20 avant de mourir à cause des monstres.
 # Recon
 Ce jeu vidéo, spécialement conçu pour la DG'HACK, est plutôt simple : il suffit de cliquer sur les fruits et les pièces pour monter en niveau.
+
 ![image](https://github.com/user-attachments/assets/1d868589-b304-4752-b833-1e815257cc07)
+
 Cependant, il faut une vitesse surhumaine pour cliquer sur tous les objets avant de se faire tuer par des monstres, tels que les fantômes. De fait, à chaque partie, nous mourrons facilement au niveau ~8 avant de nous faire tuer et de devoir recommencer la partie.
 
 Avec BurpSuite, on peut facilement remarquer que des requêtes POST se redirigent vers l'API du jeu. En regardant de plus près ces requêtes, on peut constater qu'elles ont pour but d'informer le serveur sur quoi nous avons cliqué dans le jeu. Par exemple, si nous avons cliqué sur une pièce, une requête POST avec un corps en JSON signifiera au jeu que nous avons cliqué dessus.
